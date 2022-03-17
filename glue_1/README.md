@@ -27,6 +27,7 @@ monotonically_increasing_id() + 1
 
 To ensure that group assignments are not repeated, I validate them using a hashing mechanism during the join operation.
 
+And finally i saved the data like parquet, using the out parameters in S3 to don't harcode the paths, this's a particular case for DynamoDB use.
 
 
 ## Libraries Imports
