@@ -21,6 +21,7 @@ Due to confidentiality, I am unable to show the data. However, it consists of ca
 The ETL process begins by selecting the fields in the dataframe. Next, I apply a filter based on specific models within the 'series' field. Then, I perform a hashing transformation on the shortened list of part numbers for each VIN or truck. This facilitates easy grouping of parts and assigning them to a group.
 
 The assigned group is denoted by the text 'group_' followed by a unique row identifier. In this case, I utilized the function:
+
 ```python
 monotonically_increasing_id() + 1
 ```
