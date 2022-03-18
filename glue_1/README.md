@@ -149,3 +149,7 @@ Writes the hashing results to the specified output location.
 ### Print Writing Time
 
 Prints the time taken for writing.
+
+## Contributing
+
+Thank you for your interest in contributing to the iMarckDEV Blog Repository. If you have any improvements or bug fixes, please feel free to submit a pull request. We appreciate your contributions!
