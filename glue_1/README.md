@@ -1,5 +1,6 @@
-#Glue_1 Code Documentation
-##Description
+# Glue_1 Code Documentation
+Welcome to the iMarckDEV Blog Repository! This repository contains the source code for the [iMarckDEV blog site](https://www.imarck.dev), a platform dedicated to exploring cloud technologies, sharing tutorials, and providing valuable resources for developers.
+## Description
 This is a glue code that utilizes Spark to process data located in an S3 bucket. The parameters required for the code execution are stored in a DynamoDB table. Within the code, you can easily locate the section responsible for reading these parameters, as follows:
 
 ```python
@@ -14,10 +15,10 @@ TABLE_NAME = response['Item']['table']['S']
 DATABASE = response['Item']['db']['S']
 ``` 
 
-##The data
+## The data
 Due to confidentiality, I am unable to show the data. However, it consists of catalog parts for trucks. Each truck is assigned a VIN (Vehicle Identification Number) by the manufacturer. Additionally, we have a part number, which serves as the unique code for each part. Furthermore, we have a series. For the purpose of this exercise, I am unable to reveal the specific models, so I will filter the data using 'MODEL1' and 'MODEL2'.
 
-##The ETL
+## The ETL
 The ETL process begins by selecting the fields in the dataframe. Next, I apply a filter based on specific models within the 'series' field. Then, I perform a hashing transformation on the shortened list of part numbers for each VIN or truck. This facilitates easy grouping of parts and assigning them to a group.
 
 The assigned group is denoted by the text 'group_' followed by a unique row identifier. In this case, I utilized the function:
