@@ -18,6 +18,7 @@ DATABASE = response['Item']['db']['S']
 ## The data
 Due to confidentiality, I am unable to show the data. However, it consists of catalog parts for trucks. Each truck is assigned a VIN (Vehicle Identification Number) by the manufacturer. Additionally, we have a part number, which serves as the unique code for each part. Furthermore, we have a series. For the purpose of this exercise, I am unable to reveal the specific models, so I will filter the data using 'MODEL1' and 'MODEL2'.
 
+
 ## The ETL
 The ETL process begins by selecting the fields in the dataframe. Next, I apply a filter based on specific models within the 'series' field. Then, I perform a hashing transformation on the shortened list of part numbers for each VIN or truck. This facilitates easy grouping of parts and assigning them to a group.
 
