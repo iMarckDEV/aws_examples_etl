@@ -33,7 +33,6 @@ To ensure that group assignments are not repeated, I validate them using a hashi
 
 And finally i saved the data like parquet, using the out parameters in S3 to don't harcode the paths, this's a particular case for DynamoDB use.
 
-
 ## Libraries Imports
 
 - sys
@@ -61,7 +60,6 @@ And finally i saved the data like parquet, using the out parameters in S3 to don
 - hashlib
 
 ## Functions
-
 ### clear_s3_path(bucket_name: str, prefix: str) -> None
 
 Removes all the objects from a S3 bucket that share a common prefix.
