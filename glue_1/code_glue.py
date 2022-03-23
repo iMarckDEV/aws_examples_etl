@@ -191,7 +191,5 @@ df_hash.write.mode('append').parquet(path)
 
 print('Writed DF')
 
-
-
 fin = time.time()
 print("tiempo de escritura: ", fin - inicio2)
