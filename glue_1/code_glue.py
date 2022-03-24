@@ -119,7 +119,10 @@ response = client.get_item(TableName=TABLE_DYNAMO, Key={
 
 print(response)
 
-# PARAMS
+#####################
+#--DynamoDB Params--#
+#####################
+
 FULL_FORMAT = "*.parquet"
 DAILY_FORMAT = "*.parquet"
 INPUT_BUCKET = response['Item']['bucket_in']['S']
@@ -138,6 +141,10 @@ print("tiempo de lectura de parametros: ", fin - inicio)
 
 prefix_read=f"{IN_LOCATION_CDC}"
 print(f"prefix read {prefix_read}")
+
+##################
+#--Reading Data--#
+##################
 
 files='s3://{}/{}'.format(INPUT_BUCKET, prefix_read)
 
@@ -177,7 +184,6 @@ df_hash=df_hash.join(prelim_etec, ["code_pn_hash"], "inner") \
 
 
 df_hash.printSchema()
-
 
 inicio2 = time.time()
 
