@@ -165,6 +165,10 @@ inputDF_filtered.show(10)
 print('hashing...')
 #to part_number pn
 
+########################
+#--Hashing parts list--#
+########################
+
 df_hash = inputDF_filtered.select(col('vin'),col('part_number')).distinct()\
     .groupBy('vin')\
     .agg(sort_array(collect_list('part_number')).alias('code_pn_v'))
