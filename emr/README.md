@@ -33,18 +33,21 @@ df=df.repartition(100).coalesce(50)
 # Some EMR configurations
 
 ![setup EMR](setting_emr_1.png)
+
 Some setups  for this use.
 
-![setup EMR Master node](setting_emr_2.png)
+![setup EMR Master node](node_master.png)
+
 The master node in this context refers to the central or primary node in a distributed computing system. It typically acts as a coordinator and is responsible for managing and overseeing the overall execution of tasks in the system. The master node plays a crucial role in task distribution, monitoring, and coordination among the worker nodes.
 
 ## Conecting to the master node using Putty or SSH
 In this case it's necesary the user@.... to conect at port 22 and the key pair, to send some command at the master node:
 
+Because i need to copy some files at the hadoop file system.
 ```batch
 hdfs dfs -mkdir -p /apps/hudi/lib
 hdfs dfs -copyFromLocal /usr/lib/hudi/hudi-spark-bundle.jar /apps/hudi/lib/hudi-spark-bundle.jar
 hdfs dfs -copyFromLocal /usr/lib/spark/external/lib/spark-avro.jar /apps/hudi/lib/spark-avro.jar
 ``` 
 
-![Master node](setting_emr_1.jpg)
+![Master node](setting_emr_2.png)
