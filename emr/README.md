@@ -2,7 +2,7 @@
 Welcome to the iMarckDEV Blog Repository! This repository contains the source code for the [iMarckDEV blog site](https://www.imarck.dev), a platform dedicated to exploring cloud technologies, sharing tutorials, and providing valuable resources for developers.
 
 # Description
-In this case, i'll show the use of EMR in a ETL, usin JupiterLab for the notebook and pyspark.
+In this case, I will demonstrate the use of EMR of AWS in an ETL process, utilizing JupyterLab as the notebook interface and PySpark for data processing. EMR is a cost-effective alternative to Glue, particularly for larger ETL jobs where resource requirements may be substantial. By leveraging EMR, we can optimize costs while efficiently handling significant data processing workloads.
 
 ## Especial notes
 For this particular case, the entire dataset was provided in a CSV file. This is why a list of file paths is used in this ETL (Extract, Transform, Load) process to read the data. However, there was an issue encountered while reading all the folders due to some data being corrupted or in a different format.
@@ -51,3 +51,13 @@ hdfs dfs -copyFromLocal /usr/lib/spark/external/lib/spark-avro.jar /apps/hudi/li
 ``` 
 
 ![Master node](setting_emr_2.png)
+
+## Contributing
+
+Thank you for your interest in contributing to the iMarckDEV Blog Repository. If you have any improvements or bug fixes, please feel free to submit a pull request. We appreciate your contributions!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this code for personal or commercial purposes.
+
+For more information, visit the [iMarckDEV blog site](https://www.imarck.dev) and explore other resources and tutorials. Happy coding!'''
