@@ -9,6 +9,7 @@ For this particular case, the entire dataset was provided in a CSV file. This is
 
 # ETL transoformations
 Some curious transformations in this ETL where the date:
+
 ```python
 date_in='10 de Junio de 2023 18:15:00'
 ##and how i need
