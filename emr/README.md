@@ -51,7 +51,7 @@ hdfs dfs -copyFromLocal /usr/lib/hudi/hudi-spark-bundle.jar /apps/hudi/lib/hudi-
 hdfs dfs -copyFromLocal /usr/lib/spark/external/lib/spark-avro.jar /apps/hudi/lib/spark-avro.jar
 ``` 
 
-![Master node](setting_emr_2.png)
+![Master node in terminal](setting_emr_2.png)
 
 ## Contributing
 
