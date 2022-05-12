@@ -12,7 +12,7 @@ Some curious transformations in this ETL where the date:
 
 ```python
 date_in='10 de Junio de 2023 18:15:00'
-##and how i need
+## Convert the input date from a Spanish string format to the desired format
 date_out='2023-06-10'
 ``` 
 
